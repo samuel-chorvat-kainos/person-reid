@@ -15,6 +15,10 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
+COPY kainos-chain-cert.pem /usr/local/share/ca-certificates/kainos-chain-cert.crt
+RUN update-ca-certificates
+ENV REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+
 COPY requirements.txt /app/requirements.txt
 
 RUN ls

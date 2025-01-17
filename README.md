@@ -23,11 +23,12 @@ You can select your source of videos spanning across multiple cameras and use th
 1) Install Docker.
 2) Clone this repository.
 3) Open a terminal in the cloned directory.
-4) Copy the videos you want to analyze in the data directory in the project root.
-5) Run the docker command: ```docker-compose build``` to build all the containers.
-6) Run the docker command: ```docker-compose up``` to run the containers.
-7) Download the model from (this folder)[https://drive.google.com/drive/folders/13YaXlI3IyP27bf4-rXBVmw7fvPXlcGBW?usp=sharing].
-7) Open the link http://localhost:8501 to launch the app.
+4) Copy the videos you want to analyze in the ```data``` directory (create it if it doesn't exist) in the project root.
+5) Download the model from (this folder)[https://drive.google.com/drive/folders/13YaXlI3IyP27bf4-rXBVmw7fvPXlcGBW?usp=sharing]. Copy it to ```model``` directory (create it if it doesn't exist) in the project root
+6) Download the Kainos ZScaler cert (.pem format). Rename it to ```kainos-chain-cert.pem```. Copy it to the project root.
+7) Run the docker command: ```docker-compose build``` to build all the containers.
+8) Run the docker command: ```docker-compose up``` to run the containers.
+9) Open the link http://localhost:8501 to launch the app.
 
 ### Training notebooks guide
 

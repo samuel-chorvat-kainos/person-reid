@@ -4,10 +4,11 @@
 *.jpg
 models/
 results/
-complete
 *.mp4
 data
 test.ipynb
 torchreid/
 temp/
 log/
+kainos-chain-cert.pem
+.DS_Store
